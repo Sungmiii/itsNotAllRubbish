@@ -14,7 +14,7 @@
 }
 
 header {
-    grid-column: col  / span 12;
+    grid-column: col / span 12;
     grid-row: row 1 / span 3;
     background-color: steelblue;
     height: 30vh;
@@ -62,6 +62,7 @@ footer{
 
 @media (max-width:500px){
     .gridcontainer {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 }
