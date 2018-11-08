@@ -2,46 +2,55 @@
 
 
 // let theExampleData = require("./exampleData");
-let theExampleData = require("../data/rubbishData");
-let theFormat = require("./exampleFormat")
+//let theExampleData = require("./rubbishData").rubbishData;
+import { rubbishData } from './rubbishData'
+let theExampleData = rubbishData;
 
+let theFormat = {
+    "item": "item",
+    "type": "type",
+    "instructions": "instructions",
+    "description": "description",
+    "instructionsKey": "id",
+    "instructionsValue": "content"
+}
 
-function itemInfo(itemName){
+function itemInfo(itemName) {
 
-    let item = theExampleData.find((data)=> data[theFormat.item] == itemName)
+    let item = theExampleData.find((data) => data[theFormat.item] == itemName)
     //console.log("the (first) item with name "+itemName+" is ",item)
 
     return item;
 }
-function categorieInfo(){
+function categorieInfo() {
 
-    let theCategories = theExampleData.reduce( (categories,item) => {
-        if(categories.filter( (categorie) => (categorie == item[theFormat.type])).length == 0){
+    let theCategories = theExampleData.reduce((categories, item) => {
+        if (categories.filter((categorie) => (categorie == item[theFormat.type])).length == 0) {
             //This just feels wrong though as its not stateless
             categories.push(item[theFormat.type]);
         }
 
         return categories;
-    },[])
+    }, [])
     //console.log("the categories are ",theCategories)
 
     return theCategories;
 }
-function categorieItems(categorieName){
+function categorieItems(categorieName) {
 
-    let theItems =  theExampleData.filter( (item) => {
-            return categorieName == item[theFormat.type]
-    },[]);
-    //console.log("the items of "+categorieName+" are ",theItems)
+    let theItems = theExampleData.filter((item) => {
+        return categorieName == item[theFormat.type]
+    }, []);
+    //console.log("the items of " + categorieName + " are ", theItems)
 
     return theItems;
 }
-function instructions(itemName){
+function instructions(itemName) {
     let theInstructions = []
 
     let anItem = itemInfo(itemName);
 
-    if(anItem){
+    if (anItem) {
         //theInstructions = Array.from(anItem[theFormat.instructions], (instruction)=>(instruction[theFormat.instructionsValue]));
         theInstructions = anItem[theFormat.instructions]
     }
@@ -50,7 +59,7 @@ function instructions(itemName){
     return theInstructions;
 }
 
-function addItem(name,type,instructions){
+function addItem(name, type, instructions) {
 
     let newItem = {}
 
@@ -65,21 +74,21 @@ function addItem(name,type,instructions){
     // })
     newItem[theFormat.instructions] = instructions
 
-    if(itemInfo(name) == null){
+    if (itemInfo(name) == null) {
         theExampleData.push(newItem);
         //console.log("the new item added is ",newItem)
 
         return newItem
     }
-    else{
+    else {
         //console.log("the item " +name+ " already exists")
         return null;
     }
 }
 
 //Bit of a pipe dream
-    //currently done whats needed with itemInfo
-function searchItems(){
+//currently done whats needed with itemInfo
+function searchItems() {
 
     let theItems = [];
 
