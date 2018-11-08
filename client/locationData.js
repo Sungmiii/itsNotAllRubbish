@@ -69,6 +69,75 @@ let locationsData = [
                 "time":"8:00",
             }
         ]
+    },
+    {
+        "location":"Mirimar",
+        "info":[
+            {
+                "type":"Rubbish",
+                "frequency":"once a week",
+                "day":"Friday",
+                "time":"7:00",
+            },
+            {
+                "type":"Recycling",
+                "frequency":"each odd week",
+                "day":"Friday",
+                "time":"7:00",
+            },
+            {
+                "type":"Glass",
+                "frequency":"each even week",
+                "day":"Friday",
+                "time":"7:00",
+            }
+        ]
+    },
+    {
+        "location":"Karori",
+        "info":[
+            {
+                "type":"Rubbish",
+                "frequency":"once a week",
+                "day":"Wednesday",
+                "time":"8:00",
+            },
+            {
+                "type":"Recycling",
+                "frequency":"each odd week",
+                "day":"Wednesday",
+                "time":"8:00",
+            },
+            {
+                "type":"Glass",
+                "frequency":"each even week",
+                "day":"Wednesday",
+                "time":"8:00",
+            }
+        ]
+    },
+    {
+        "location":"Te Aro",
+        "info":[
+            {
+                "type":"Rubbish",
+                "frequency":"Daily",
+                "day":"All the Days",
+                "time":"5:30-10:00",
+            },
+            {
+                "type":"Recycling",
+                "frequency":"once a week",
+                "day":"Tuesday",
+                "time":"5:30-10:00",
+            },
+            {
+                "type":"Glass",
+                "frequency":"once a week",
+                "day":"Tuesday",
+                "time":"5:30-10:00",
+            }
+        ]
     }
 
 ]
