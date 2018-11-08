@@ -2,8 +2,9 @@ import React from 'react'
 import { HashRouter, Route } from 'react-router-dom'
 
 import Home from './Home'
-import Nav from './nav'
+import Nav from './Nav'
 import Footer from './Footer'
+
 
 class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class App extends React.Component {
             <Footer />
             <p>&copy; 2018  Cathy James Kelly Sungmi</p>
           </footer>
+          
         </section>
       </HashRouter>
 
