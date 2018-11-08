@@ -1,6 +1,6 @@
 /* reset */
 
-html,body,*{
+html,body{
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -61,8 +61,33 @@ main {
 .homearea {
     padding: 3em;
 }
-.homearea p {
+.homearea p,.typearea p{
     max-width: 750px;
+}
+
+/* main > type area */
+.typearea {
+    padding: 3em;
+}
+.collectBtn{
+    width: 200px;
+    outline: 2px solid white;
+    outline-offset: 0.2em;
+    background-color: white;
+    padding: .2em .4em;
+}
+.collectBtn a {
+   
+    color: rgb(52, 49, 181);
+    text-decoration: none;
+}
+
+/* main > data area */
+.rubbishlist {
+    padding: 0 0 3em 3em;
+}
+.rubbishlist li {
+    margin-bottom: 1em;
 }
 /* footer */
 
@@ -87,6 +112,9 @@ footer p {
 /* mobile */
 
 @media (max-width:500px){
+    .gridcontainer  {
+        grid-template-columns: 1fr;
+    }
     nav{
         grid-column:  col;
         padding: 1em;
