@@ -1,7 +1,8 @@
 
 
 
-let theExampleData = require("./exampleData");
+// let theExampleData = require("./exampleData");
+let theExampleData = require("../data/rubbishData");
 let theFormat = require("./exampleFormat")
 
 
@@ -41,7 +42,8 @@ function instructions(itemName){
     let anItem = itemInfo(itemName);
 
     if(anItem){
-        theInstructions = Array.from(anItem[theFormat.instructions], (instruction)=>(instruction[theFormat.instructionsValue]));
+        //theInstructions = Array.from(anItem[theFormat.instructions], (instruction)=>(instruction[theFormat.instructionsValue]));
+        theInstructions = anItem[theFormat.instructions]
     }
     //console.log("the instructions for "+itemName+" are ",theInstructions)
 
@@ -55,12 +57,13 @@ function addItem(name,type,instructions){
     newItem[theFormat.item] = name;
     newItem[theFormat.type] = type;
 
-    newItem[theFormat.instructions] = instructions.map( (instruction,index)=>{
-        let newInstruction = {}
-        newInstruction[theFormat.instructionsKey] = index + 1;
-        newInstruction[theFormat.instructionsValue] = instruction;
-        return newInstruction;
-    })
+    // newItem[theFormat.instructions] = instructions.map( (instruction,index)=>{
+    //     let newInstruction = {}
+    //     newInstruction[theFormat.instructionsKey] = index + 1;
+    //     newInstruction[theFormat.instructionsValue] = instruction;
+    //     return newInstruction;
+    // })
+    newItem[theFormat.instructions] = instructions
 
     if(itemInfo(name) == null){
         theExampleData.push(newItem);

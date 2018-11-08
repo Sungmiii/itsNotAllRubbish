@@ -2,6 +2,7 @@
     "item": "item",
     "type": "type",
     "instructions": "instructions",
+    "description": "description",
     "instructionsKey": "id",
     "instructionsValue": "content"
 }
