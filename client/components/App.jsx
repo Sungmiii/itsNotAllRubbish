@@ -3,6 +3,7 @@ import { HashRouter, Route } from 'react-router-dom'
 
 import Home from './Home'
 import Nav from './nav'
+import Footer from './Footer'
 
 class App extends React.Component {
   render() {
@@ -10,13 +11,14 @@ class App extends React.Component {
       <HashRouter>
         <section className="gridcontainer">
           <header>
-            <Nav />
           </header>
+          <Nav />
           <main>
             <Route exact path="/" component={Home} />
           </main>
           <footer>
-            <p>footer</p>
+            <Footer />
+            <p>&copy; 2018  Cathy James Kelly Sungmi</p>
           </footer>
         </section>
       </HashRouter>
