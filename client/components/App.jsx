@@ -2,7 +2,7 @@ import React from 'react'
 import { HashRouter, Route } from 'react-router-dom'
 
 import Home from './Home'
-import Nav from './nav'
+import Nav from './Nav'
 import Footer from './Footer'
 
 class App extends React.Component {
