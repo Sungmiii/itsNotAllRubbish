@@ -1,3 +1,4 @@
+
 const rubbishData = [
     {
         id: 1,
@@ -113,3 +114,6 @@ const rubbishData = [
    
 
 ]
+
+
+module.exports = rubbishData
