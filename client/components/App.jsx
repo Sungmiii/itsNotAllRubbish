@@ -1,31 +1,31 @@
 import React from 'react'
-import { HashRouter, Route, Link } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
 
-import Nav from './Nav'
 import Home from './Home'
+import Nav from './nav'
+import Footer from './Footer'
 
 class App extends React.Component {
   render() {
     return (
       <HashRouter>
-        <React.Fragment>
-
-          <section className="gridcontainer">
-            <header>
-              <h1>isNotAllRubbish!</h1>
-            </header>
-            <Nav />
-            <main>
-              <Home />
-            </main>
-            <footer>
-              <p>This is footer for isNotAllRubbish 2018</p>
-            </footer>
-          </section>
-        </React.Fragment>
+        <section className="gridcontainer">
+          <header>
+          </header>
+          <Nav />
+          <main>
+            <Route exact path="/" component={Home} />
+          </main>
+          <footer>
+            <Footer />
+            <p>&copy; 2018  Cathy James Kelly Sungmi</p>
+          </footer>
+        </section>
       </HashRouter>
+
     )
   }
 }
+
 export default App
 
