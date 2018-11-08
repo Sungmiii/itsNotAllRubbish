@@ -9,7 +9,9 @@
   "scripts": {
     "start": "webpack && node server",
     "dev": "node server & webpack --watch",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "postinstall": "webpack"
+
   },
   "babel": {
     "presets": [
@@ -40,7 +42,8 @@
     "jest": "^22.1.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.3.1",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1"
+    "webpack-dev-server": "^3.1.10"
   }
 }
