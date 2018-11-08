@@ -1,0 +1,82 @@
+[
+    {
+        "item": "Barry",
+        "type": "Rubbish",
+        "instructions":[
+            {
+                "id":1,
+                "content": "clean it"
+            }
+        ]  
+    },
+    {
+        "item": "Barry Clone",
+        "type": "Rubbish",
+        "instructions":[
+            {
+                "id":1,
+                "content": "clean it also"
+            }
+        ]  
+    },
+    {
+        "item": "Garry Clone",
+        "type": "Glass",
+        "instructions":[
+            {
+                "id":1,
+                "content": "first and not broken"
+            }
+        ]  
+    },
+    {
+        "item": "Garry",
+        "type": "Glass",
+        "instructions":[
+            {
+                "id":1,
+                "content": "not broken"
+            }
+        ]  
+    },
+    {
+        "item": "Harry",
+        "type": "Recycling",
+        "instructions":[
+            {
+                "id":1,
+                "content": "gets used alot"
+            }
+        ]  
+    },
+    {
+        "item": "Harry Clone",
+        "type": "Recycling",
+        "instructions":[
+            {
+                "id":1,
+                "content": "gets used alot but not as much"
+            }
+        ]  
+    },
+    {
+        "item": "Larry",
+        "type": "Green Waste",
+        "instructions":[
+            {
+                "id":1,
+                "content": "A gardener"
+            }
+        ]  
+    },
+    {
+        "item": "STEEEEEEEEEEEEEEEEEEEVE",
+        "type": "E Waste",
+        "instructions":[
+            {
+                "id":1,
+                "content": "Wave of the future"
+            }
+        ]  
+    }
+]

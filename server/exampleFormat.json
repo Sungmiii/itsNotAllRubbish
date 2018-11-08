@@ -1,0 +1,7 @@
+{
+    "item": "item",
+    "type": "type",
+    "instructions": "instructions",
+    "instructionsKey": "id",
+    "instructionsValue": "content"
+}
