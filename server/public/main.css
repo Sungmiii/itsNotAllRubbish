@@ -96,7 +96,10 @@ main {
 }
 .itemInfo {
     margin-right: 5em;
+    width: 750px;
 }
+
+
 /* footer */
 
 footer{
@@ -143,4 +146,14 @@ footer p {
     .footernav > nav:nth-child(1) > ul:nth-child(1){
         padding:0;  
     }
+
+.datainfoarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.itemInfo {
+    width: 300px;
+}
+
 }

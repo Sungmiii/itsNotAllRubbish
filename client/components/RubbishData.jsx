@@ -8,9 +8,9 @@ class RubbishData extends React.Component {
     render() {
         let rubbishType = this.props.match.params.item
         let rubbishCategory = this.props.match.params.category
-        let singleRubbish = db.categorieItems(rubbishType).map((thing) => thing.item)
-        console.log(singleRubbish)
-        console.log("the thing is", rubbishType)
+
+        /* console.log(singleRubbish) */
+        /*  console.log("the thing is", rubbishType) */
         /* console.log('rubbishdata page: ', data)
         console.log('rubbishType', rubbishType)
 
@@ -21,9 +21,9 @@ class RubbishData extends React.Component {
             <div className="rubbishlist">
                 <ul>
                     {db.categorieItems(rubbishType).map((thing) => {
-                        console.log(thing.item, 'thing is ', thing)
+                        /* console.log(thing.item, 'thing is ', thing) */
                         return (/* (<li key={thing.id}><Link to="/">{thing.item}</Link></li>)) */
-                            <li><Link to={'/environment/' + rubbishType + '/' + rubbishType + '/' + rubbishCategory}>{thing.item}
+                            <li><Link to={'/environment/' + rubbishType + '/' + rubbishType + '/' + thing.item}>{thing.item}
                             </Link></li>)
                     })}
                 </ul>
