@@ -1,4 +1,5 @@
 export const rubbishData = [
+
     {
         id: 1,
         item: "Egg cartons",
@@ -113,5 +114,3 @@ export const rubbishData = [
 
 
 ]
-
-
