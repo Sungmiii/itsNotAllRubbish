@@ -1,6 +1,3 @@
-
-
-
 // let theExampleData = require("./exampleData");
 //let theExampleData = require("./rubbishData").rubbishData;
 import { rubbishData } from './rubbishData'
