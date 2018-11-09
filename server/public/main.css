@@ -89,6 +89,14 @@ main {
 .rubbishlist li {
     margin-bottom: 1em;
 }
+
+.datainfoarea {
+    display: flex;
+    justify-content: space-between;
+}
+.itemInfo {
+    margin-right: 5em;
+}
 /* footer */
 
 footer{

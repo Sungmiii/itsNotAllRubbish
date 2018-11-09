@@ -6,7 +6,7 @@ import Nav from './Nav'
 import Footer from './Footer'
 import RubbishType from './RubbishType'
 import RubbishData from './RubbishData'
-
+import RubbishCategory from './RubbishCategory'
 
 
 class App extends React.Component {
@@ -20,13 +20,16 @@ class App extends React.Component {
           <main>
             <Route exact path="/" component={Home} />
             <Route path="/environment/:type" component={RubbishType} />
-            <Route path="/environment/:type/:item" component={RubbishData} />
+            <section className="datainfoarea">
+              <Route path="/environment/:type/:item" component={RubbishData} />
+              <Route path="/environment/:type/:item/:category" component={RubbishCategory} />
+            </section>
           </main>
           <footer>
             <Footer />
             <p>&copy; 2018  Cathy James Kelly Sungmi</p>
           </footer>
-          
+
         </section>
       </HashRouter>
 
