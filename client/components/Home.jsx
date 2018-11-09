@@ -15,7 +15,7 @@ class Home extends React.Component {
                     Our guide helps you help us, and we want to hear your feedback using this feedback form! 
                 </p>
                 <p>
-                    Swellington City Council: Keeping Swellington Swell since 2018!
+                    Swellington City Council: keeping Swellington Swell since 2018!
                 </p>
 
 
