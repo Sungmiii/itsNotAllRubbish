@@ -21,17 +21,17 @@ class FeedBack extends React.Component {
 
         const feedback = this.state.FeedBack
 
-        console.log("handle the change for event ", event.target);
+        // console.log("handle the change for event ", event.target);
         if (event.target.name == "Name") {
-            console.log("handle the change for name");
+            // console.log("handle the change for name");
             feedback.Name = event.target.value
         }
         else if (event.target.name == "Email") {
-            console.log("handle the change for Email");
+            // console.log("handle the change for Email");
             feedback.Email = event.target.value
         }
         else if (event.target.name == "Feedback") {
-            console.log("handle the change for feedback");
+            // console.log("handle the change for feedback");
             feedback.Feedback = event.target.value
         }
         //feedback.Name = event.target.Name.value;
@@ -50,7 +50,7 @@ class FeedBack extends React.Component {
             message: event.target.Feedback.value
         }
 
-        console.log(this.state)
+        // console.log(this.state)
 
         //Make a message to send to the server. this was obtained from http://youmightnotneedjquery.com/
         var request = new XMLHttpRequest();
@@ -58,7 +58,11 @@ class FeedBack extends React.Component {
         request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
         request.send(JSON.stringify(dataToSend));
 
-        alert("we are taking your comments very seriously")
+        request.onload = () => {
+            console.log("the server sent something back", request.responseText)
+            alert("we are taking your comments very seriously.... Also " + request.responseText)
+        }
+
     }
 
     render() {
