@@ -1,5 +1,5 @@
+export const rubbishData = [
 
-const rubbishData = [
     {
         id: 1,
         item: "Egg cartons",
@@ -110,10 +110,7 @@ const rubbishData = [
             "2. Place in Rubbishs."
         ]
     },
-            
-   
+
+
 
 ]
-
-
-module.exports = rubbishData
