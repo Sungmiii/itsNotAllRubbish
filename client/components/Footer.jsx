@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Nav from './Nav'
+import FeedBack from './FeedBack'
 
 class Footer extends React.Component {
     render() {
@@ -10,8 +11,12 @@ class Footer extends React.Component {
                 <div className="footernav">
                     <Nav />
                 </div>
-                <div></div>
-                <div></div>
+                <div>
+                    <FeedBack />
+                </div>
+                <div>
+                    
+                </div>
             </div>
         )
     }

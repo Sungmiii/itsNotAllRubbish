@@ -8,6 +8,7 @@ import RubbishType from './RubbishType'
 import RubbishData from './RubbishData'
 
 
+
 class App extends React.Component {
   render() {
     return (
@@ -25,6 +26,7 @@ class App extends React.Component {
             <Footer />
             <p>&copy; 2018  Cathy James Kelly Sungmi</p>
           </footer>
+          
         </section>
       </HashRouter>
 
