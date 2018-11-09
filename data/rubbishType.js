@@ -3,7 +3,7 @@ const rubbishType = {
         {
             id: 1,
             name: 'Rubbish',
-            description: 'Rubbish in Wellington is collected by specially-designed, one-person operated trucks. The driver of the trucks is also the collector.'
+            description: 'Rubbish in Swellington is collected by specially-designed, one-person operated trucks. The driver of the trucks is also the collector.'
         }
     ],
     Recycling: [

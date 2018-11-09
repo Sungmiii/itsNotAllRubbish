@@ -7,7 +7,7 @@ import rubbishType from '../data/rubbishType'
 
 
 test('<Home />', () => {
-  const expected = 'This is home section'
+  const expected = 'Welcome to Swellington City Council\'s Rubbish and Recycling Guide!'
   const wrapper = shallow(<Home />)
   expect(wrapper.find('h1').first().text()).toBe(expected)
 })
